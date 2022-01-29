@@ -1,0 +1,39 @@
+def PlayerA() :
+"""This action permits player A to choose his moove"""
+    a = input("Rock\nPaper\nScissors\n")
+while a not in ["Rock","Paper","Scissors"]:
+    a = input("Rock\nPaper\nScissors\n")
+return (a)
+
+def PlayerB() :
+"""This action permits player B to choose his moove"""
+    b = input("Rock\nPaper\nScissors\n")
+while a not in ["Rock","Paper","Scissors"]:
+    b = input("Rock\nPaper\nScissors\n")
+return (b)
+
+choiceA = PlayerA()
+choiceB = PlayerB()
+print(choiceB)
+
+if choiceA == "Rock" and choiceB == "Scissors" :
+   print ("Player A wins")
+elif choiceA == "Rock" and choiceB == "Paper" :
+   print ("Player A looses")
+elif choiceA == "Rock" and choiceB == "Rock" :
+  print ("Equality!")
+  
+if choiceA == "Paper" and choiceB == "Rock" :
+   print ("Player A wins")
+elif choiceA == "Paper" and choiceB == "Scissors" :
+   print ("Player A looses")
+elif choiceA == "Paper" and choiceB == "Paper" :
+  print ("Equality!")
+  
+if choiceA == "Scissors" and choiceB == "Paper" :
+   print ("Player A wins")
+elif choiceA == "Scissors" and choiceB == "Rock" :
+   print ("Player A looses")
+elif choiceA == "Scissors" and choiceB == "Scissors" :
+  print ("Equality!")
+ 
